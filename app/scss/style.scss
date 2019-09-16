@@ -1,3 +1,106 @@
 @import 'global';
 @import 'vars';
 @import 'fonts';
+
+.header{
+    background: no-repeat center /cover;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+}
+.header__top{
+    height: 103px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-logo a{
+        font-size: 29px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: -2px;
+        color: #ffffff;
+    }
+    &-menu{
+        li{
+            display: inline-block;
+            & + li{
+                margin-left: 32px;
+            }
+        }
+        .active{
+            color: $yellow;
+        }
+        a{
+            color: #ffffff;
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            transition: .3s;
+            &:hover{
+                color: $yellow;
+            }
+        }
+    }
+}
+.header__slider{
+    position: relative;
+}
+.header__content{
+    min-height: 590px;
+    max-width: 500px;
+    padding: 85px 0;
+    &-title{
+        font-size: 41px;
+        font-weight: 700;
+        line-height: 50px;
+        margin-bottom: 25px;
+    }
+    &-text{
+        font-family: "Roboto", sans-serif;
+        font-size: 19px;
+        font-weight: 100;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+    &-btn a{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 10px;
+        padding: 16px 26px;
+        color: #323232;
+        background-color: $yellow;
+        display: inline-block;
+        transition: .3s;
+        border-radius: 3px;
+        text-transform: uppercase;
+        margin-right: 3px;
+        &:hover{
+            background-color: $purple;
+            color: #ffffff;
+        }
+    }
+}
+.slick-dots{
+    position: absolute;
+    left: 0;
+    bottom: 37px;
+    li{
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background-color: #a8969a;
+        border-radius: 50%;
+        cursor: pointer;
+        button{
+            border: none;
+            outline: none;
+            background-color: transparent;
+            font-size: 0;
+        }
+        & ~ li{
+            margin-left: 7px;
+        }
+    }
+    .slick-active{
+        background-color: #fff;
+    }
+}
