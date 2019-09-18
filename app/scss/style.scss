@@ -207,6 +207,7 @@
     }
     img{
         display: block;
+        width: 100%;
         margin-bottom: 30px;
     }
     &-title{
@@ -284,7 +285,7 @@
         font-size: 10px;
         color: $text;
         line-height: 22px;
-        margin-bottom: 27px;
+        margin-bottom: 20px;
         span{
             display: block;
         }
@@ -299,6 +300,7 @@
         background-color: $yellow;
         border-radius: 3px;
         transition: .3s;
+        display: inline-block;
         &:hover{
             color: #fefefe;
             background-color: $purple;
@@ -306,21 +308,6 @@
     }
 }
 .pricing-center{
-    position: relative;
-    &::before,
-    &::after{
-        content: '';
-        position: absolute;
-        width: 2px;
-        height: 203px;
-        background-color: #e7e7e7;
-    }
-    &::before{
-        top: 4px;
-        left: 0;
-    }
-    &::after{
-        top: 4px;
-        right: 0;
-    }
+   border-right: 2px solid #e7e7e7;
+   border-left: 2px solid #e7e7e7;
 }
