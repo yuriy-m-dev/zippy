@@ -1,6 +1,7 @@
 $(function(){
     $('.header__slider').slick({
         arrows: false,
+        variableWidth: true,
         dots: true
     });
 

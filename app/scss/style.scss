@@ -44,11 +44,15 @@
 .header__slider{
     position: relative;
 }
+.slick-slide{
+    max-width: 693px;
+    width: 100%;
+}
 .header__content{
     min-height: 590px;
-    max-width: 500px;
     padding: 85px 0 85px 1px;
     &-title{
+        max-width: 500px;
         font-size: 41px;
         font-weight: 700;
         line-height: 50px;
@@ -60,6 +64,7 @@
         font-weight: 100;
         line-height: 30px;
         margin-bottom: 30px;
+        max-width: 500px;
     }
     &-btn a{
         font-family: 'Montserrat', sans-serif;
@@ -72,7 +77,6 @@
         transition: .3s;
         border-radius: 3px;
         text-transform: uppercase;
-        margin-right: 3px;
         &:hover{
             background-color: $purple;
             color: #ffffff;
