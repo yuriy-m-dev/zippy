@@ -333,3 +333,57 @@
     font-weight: 700;
     text-transform: uppercase;
 }
+
+.team{
+    padding: 71px 0;
+}
+.team__title{
+    text-align: center;
+    margin-bottom: 43px;
+}
+.team__inner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.team__item{
+    max-width: 174px;
+    width: 100%;
+    margin-bottom: 62px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: $text;
+    &-img{
+        width: 173px;
+        height: 173px;
+        border-radius: 50%;
+        margin: 0 0 28px;
+        overflow: hidden;
+        &:hover{
+            .team__item-img-social{
+                opacity: .8;
+            }
+        }
+        &-social{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 173px;
+            height: 173px;
+            background-color: #62497c;
+            opacity: 0;
+            transition: .3s;
+        }
+    }
+    &-name{
+        font-size: 15px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+    }
+    &-position{
+        font-size: 15px;
+        font-weight: 400;
+        opacity: 0.39;
+    }
+}
