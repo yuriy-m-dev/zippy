@@ -2,6 +2,8 @@
 @import 'vars';
 @import 'fonts';
 
+// Header
+
 .header{
     background: no-repeat center /cover;
     font-family: 'Montserrat', sans-serif;
@@ -109,6 +111,8 @@
     }
 }
 
+// Wellcome
+
 .welcome__inner{
     display: flex;
     flex-direction: column;
@@ -189,6 +193,7 @@
     }
 }
 
+// Projects
 
 .projects{
     padding-top: 52px;
@@ -249,6 +254,8 @@
         }
     }
 }
+
+// Pricing
 
 .pricing{
     background-color: #fefefe;
@@ -316,6 +323,8 @@
    border-left: 2px solid #e7e7e7;
 }
 
+// Video
+
 .video{
     padding: 85px 0 115px;
     background-color: $purple;
@@ -337,6 +346,8 @@
     font-weight: 700;
     text-transform: uppercase;
 }
+
+// Team
 
 .team{
     padding: 71px 0;
@@ -389,5 +400,61 @@
         font-size: 15px;
         font-weight: 400;
         opacity: 0.39;
+    }
+}
+
+// Life
+
+.life{
+    padding: 80px 0 109px;
+    background-color: #efefef;
+}
+.life__title{
+    margin-bottom: 38px;
+    text-align: center;
+}
+.life__slider{
+    position: relative;
+    margin-bottom: 10px;
+}
+.slider__nav{
+    max-width: 633px;
+    margin: 0 auto;
+}
+.slick-arrow{
+    font-size: 0;
+    border: none;
+    width: 31px;
+    height: 69px;
+    background-color: #62497c;
+    position: absolute;
+    bottom: -79px;
+    z-index: 1;
+    outline: none;
+    cursor: pointer;
+    &::after{
+        content: '';
+        position: absolute;
+        width: 9px;
+        height: 14px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+    &.slick-disabled{
+        background-color: #2a2a2a;
+    }
+}
+.slick-prev{
+    left: 0;
+    &::after{
+        background: url(../images/life/left-arrow.svg);
+    }
+}
+.slick-next{
+    right: 0;
+    &::after{
+        background: url(../images/life/right-arrow.svg);
     }
 }

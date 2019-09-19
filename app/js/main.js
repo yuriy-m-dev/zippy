@@ -10,6 +10,24 @@ $(function(){
         slidesToShow: 3,
         slidesToScroll: 1,
         variableWidth: true,
-        centerMode: true
+        centerMode: true,
+        infinite: false
     });
+
+    $('.life__slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        variableWidth: true,
+        infinite: false,
+        asNavFor: '.slider__nav'
+      });
+      $('.slider__nav').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        asNavFor: '.life__slider',
+        centerMode: false,
+        focusOnSelect: true,
+        arrows: false,
+        infinite: false
+      });
 });
