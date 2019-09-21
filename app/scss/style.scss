@@ -584,7 +584,7 @@
     }
     &__form{
         width: 50%;
-        padding: 50px 0 50px 43px;
+        padding: 50px 0 40px 43px;
         background-color: $yellow;
         &-title{
             margin-bottom: 30px;
@@ -630,4 +630,52 @@
             cursor: pointer;
         }
     }
+}
+
+// Footer
+
+.footer{
+    background-color: #fefefe;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        padding: 75px 0 50px;
+        min-height: 300px;
+    }
+}
+.footer__item{
+    width: 206px;
+    text-align: center;
+    padding: 0 29px;
+    color: $text;
+    line-height: 23.58px;
+    &-title{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        color: $text;
+        font-size: 10px;
+        text-transform: uppercase;
+        margin-bottom: 13px;
+    }
+    &-icons{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        a{
+            margin: 0px 11px 15px;
+        }
+        path{
+            transition: .2s;
+            &:hover{
+                fill: $purple;
+            }
+        }
+    }
+    &-social{
+        padding: 0 37px;
+    }
+    &-contact a{
+        color: $text;
+    }
+    
 }
