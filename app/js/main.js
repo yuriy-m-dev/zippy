@@ -11,7 +11,8 @@ $(function(){
         slidesToScroll: 1,
         variableWidth: true,
         centerMode: true,
-        infinite: false
+        infinite: true,
+        initialSlide:1
     });
 
     $('.life__slider').slick({
