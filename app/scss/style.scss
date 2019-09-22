@@ -144,6 +144,8 @@
     display: flex;
     justify-content: space-between;
     &-item{
+        display: flex;
+        flex-direction: column;
         width: 161px;
         text-align: center;
     }
@@ -169,6 +171,7 @@
     margin-bottom: 7px;
 }
 .welcome__advantages-text{
+    flex: 1 1 auto;
     font-size: 13px;
     line-height: 23px;
     opacity: .5;

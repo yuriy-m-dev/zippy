@@ -12,7 +12,7 @@ $(function(){
         variableWidth: true,
         centerMode: true,
         infinite: true,
-        initialSlide:1
+        centerPadding: '50px'
     });
 
     $('.life__slider').slick({
