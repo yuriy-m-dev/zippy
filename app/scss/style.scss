@@ -210,6 +210,8 @@
     justify-content: center;
 }
 .projects__item{
+    display: flex;
+    flex-direction: column;
     max-width: 351px;
     background-color: #efefef;
     padding-bottom: 45px;
@@ -233,6 +235,7 @@
         padding-right: 35px;
     }
     &-text{
+        flex: 1 1 auto;
         line-height: 23px;
         opacity: .5;
         color: $text;
@@ -541,6 +544,8 @@
     justify-content: space-between;
 }
 .blog__item{
+    display: flex;
+    flex-direction: column;
     width: 210px;
     text-align: center;
     &-img{
@@ -565,6 +570,7 @@
         margin-bottom: 13px;
     }
     &-text{
+        flex: 1 1 auto;
         line-height: 23px;
         font-size: 13px;
         color: $text;
