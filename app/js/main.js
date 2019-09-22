@@ -26,9 +26,10 @@ $(function(){
         slidesToShow: 5,
         slidesToScroll: 1,
         asNavFor: '.life__slider',
-        centerMode: false,
+        centerMode: true,
         focusOnSelect: true,
         arrows: false,
-        infinite: false
+        infinite: false,
+        variableWidth: false
       });
 });

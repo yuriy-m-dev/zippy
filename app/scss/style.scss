@@ -419,10 +419,18 @@
 .life__slider{
     position: relative;
     margin-bottom: 10px;
+    &-item{
+        max-width: 694px;
+        height: 429px;
+        background: no-repeat center /cover;
+    }
 }
 .slider__nav{
-    max-width: 633px;
-    margin: 0 auto;
+    &-item{
+        width: 111px;
+        height: 69px;
+        background: no-repeat center /cover;
+    }
 }
 .slick-arrow{
     font-size: 0;
